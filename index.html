@@ -9,28 +9,25 @@
   <style>
     body {
       font-family: 'Roboto', sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background: #f5f5f5; /* light background */
       margin: 0;
       color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
+      min-height: 100vh;
     }
-    .content {
-      background: rgba(0,0,0,0.6);
-      padding: 40px;
-      border-radius: 15px;
-      max-width: 500px;
+    .container {
+      max-width: 900px; /* wider box */
+      margin: 50px auto; /* loosely positioned, not tight center */
+      padding: 50px 40px;
+      background: rgba(0, 0, 0, 0.7); /* dark transparent box */
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     }
     h1 {
-      margin-bottom: 10px;
-      font-size: 2em;
+      margin-bottom: 15px;
+      font-size: 2.2em;
     }
     p {
-      margin: 5px 0;
+      margin: 8px 0;
       font-size: 1.1em;
     }
     a {
@@ -38,14 +35,12 @@
       text-decoration: none;
     }
     @media (max-width: 600px) {
-      body {
-        padding: 20px;
-      }
-      .content {
-        padding: 25px;
+      .container {
+        padding: 30px 20px;
+        margin: 20px;
       }
       h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
       }
       p {
         font-size: 1em;
@@ -54,7 +49,7 @@
   </style>
 </head>
 <body>
-  <div class="content">
+  <div class="container">
     <h1>Hanson Logistics Ltd.</h1>
     <p>Freight forwarding services</p>
     <p>Tallinn / Estonia</p>
