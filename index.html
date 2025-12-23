@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,15 +27,16 @@
     }
     .overlay {
       background: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
-      padding: 40px 30px;
+      padding: 5vh 3vw; /* scales with screen size */
       border-radius: 12px;
       max-width: 900px;
       width: 90%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 80vh;
-      color: #fff; /* text color now white for contrast */
+      min-height: 70vh; /* scales with viewport, lets content fit */
+      color: #fff; 
+      box-sizing: border-box;
     }
     h1 {
       font-family: 'Crimson Text', serif;
@@ -84,85 +83,3 @@
   </div>
 </body>
 </html>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hanson Logistics – Freight Forwarding Estonia</title>
-  <meta name="description" content="Hanson Logistics Ltd – Freight forwarding services in Tallinn, Estonia. Contact us: +372 56666701, info@hansonlogistics.ee">
-  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    body {
-      font-family: 'Quattrocento', serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-    }
-    .content {
-      max-width: 900px;
-      font-size: 2.2em;
-      line-height: 2.4em; /* more vertical space */
-      padding: 20px;
-    }
-    h1 {
-      font-family: 'Crimson Text', serif;
-      font-size: 3em; /* larger heading */
-      margin-bottom: 0.8em;
-    }
-    p {
-      margin: 0.8em 0;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    /* Make font scale on smaller screens */
-    @media (max-width: 768px) {
-      .content {
-        font-size: 1.6em;
-        line-height: 2em;
-      }
-      h1 {
-        font-size: 2.2em;
-        margin-bottom: 0.6em;
-      }
-    }
-    @media (max-width: 480px) {
-      .content {
-        font-size: 1.3em;
-        line-height: 1.8em;
-      }
-      h1 {
-        font-size: 1.8em;
-        margin-bottom: 0.5em;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="content">
-    <h1>Hanson Logistics Ltd.</h1>
-    <p>Freight forwarding services</p>
-    <p>Tallinn / Estonia</p>
-    <p>Reg. no 12072393 | VAT no EE101677235</p>
-    <p>Phone: <a href="tel:+37256666701">+372 56666701</a></p>
-    <p>Email: <a href="mailto:info@hansonlogistics.ee">info@hansonlogistics.ee</a></p>
-  </div>
-</body>
-</html>
-
