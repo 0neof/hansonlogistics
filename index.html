@@ -4,68 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hanson Logistics – Freight Forwarding Estonia</title>
+
+  <!-- Primary SEO Meta Tags -->
   <meta name="description" content="Hanson Logistics Ltd – Freight forwarding services in Tallinn, Estonia. Contact us: +372 56666701, info@hansonlogistics.ee">
+  <meta name="keywords" content="Hanson Logistics, freight forwarding, logistics, air freight, road freight, Estonia">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hanson Logistics – Freight Forwarding Estonia">
+  <meta property="og:description" content="Professional freight forwarding services based in Tallinn, Estonia. Contact us for reliable logistics solutions.">
+  <meta property="og:image" content="https://www.hansonlogistics.ee/background.jpg">
+  <meta property="og:url" content="https://www.hansonlogistics.ee">
+
+  <!-- Structured data for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FreightCompany",
+    "name": "Hanson Logistics Ltd.",
+    "description": "Freight forwarding services in Tallinn, Estonia.",
+    "url": "https://www.hansonlogistics.ee",
+    "telephone": "+37256666701",
+    "email": "info@hansonlogistics.ee",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tallinn",
+      "addressCountry": "EE"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/hanson-logistics",
+      "https://www.facebook.com/hansonlogistics"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
   <style>
+    html, body { margin:0; padding:0; height:100%; width:100%; }
     body {
-      margin: 0;
       font-family: 'Quattrocento', serif;
-      /* subtle vertical gradient + vignette + texture overlay */
-      background: 
-        radial-gradient(circle at center, rgba(0,0,0,0.05), rgba(0,0,0,0.15)) overlay,
-        linear-gradient(to bottom, #eef2f7, #d9e2ec);
-      background-blend-mode: overlay;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
       text-align: center;
-      line-height: 1.8em;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
+      color: #444444;
     }
     .content {
       max-width: 900px;
       font-size: 1.8em;
-      color: #444444; /* soft dark gray for text */
     }
     h1 {
       font-family: 'Crimson Text', serif;
       font-size: 2.2em;
       margin-bottom: 0.5em;
-      color: #333333; /* softer dark gray heading */
+      color: #333333;
     }
-    p {
-      margin: 0.5em 0;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    p { margin: 0.5em 0; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     @media (max-width: 600px) {
-      .content {
-        font-size: 1.3em;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-      line-height: 1.6em;
+      .content { font-size: 1.3em; }
+      h1 { font-size: 1.8em; }
     }
   </style>
 </head>
 <body>
-  <div class="content">
+  <main class="content">
     <h1>Hanson Logistics Ltd.</h1>
     <p>Freight forwarding services</p>
     <p>Tallinn / Estonia</p>
     <p>Reg. no 12072393 | VAT no EE101677235</p>
     <p>Phone: <a href="tel:+37256666701">+372 56666701</a></p>
     <p>Email: <a href="mailto:info@hansonlogistics.ee">info@hansonlogistics.ee</a></p>
-  </div>
+    <!-- Hidden image for Google indexing (alt text included) -->
+    <img src="background.jpg" alt="Freight transport and logistics operations including trucks, cargo and shipping in Estonia" style="display:none;">
+  </main>
 </body>
 </html>
