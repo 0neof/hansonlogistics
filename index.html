@@ -11,8 +11,11 @@
     body {
       margin: 0;
       font-family: 'Quattrocento', serif;
-      /* subtle vertical gradient with soft professional colors */
-      background: linear-gradient(to bottom, #eef2f7, #d9e2ec);
+      /* subtle vertical gradient + vignette + texture overlay */
+      background: 
+        radial-gradient(circle at center, rgba(0,0,0,0.05), rgba(0,0,0,0.15)) overlay,
+        linear-gradient(to bottom, #eef2f7, #d9e2ec);
+      background-blend-mode: overlay;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -26,13 +29,13 @@
     .content {
       max-width: 900px;
       font-size: 1.8em;
-      color: #333333; /* dark gray for readability */
+      color: #444444; /* soft dark gray for text */
     }
     h1 {
       font-family: 'Crimson Text', serif;
       font-size: 2.2em;
       margin-bottom: 0.5em;
-      color: #222222; /* slightly darker heading */
+      color: #333333; /* softer dark gray heading */
     }
     p {
       margin: 0.5em 0;
