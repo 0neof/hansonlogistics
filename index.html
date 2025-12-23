@@ -34,9 +34,9 @@
     body {
       margin: 0;
       font-family: 'Quattrocento', serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #333; /* dark grey text */
+      /* subtle gradient background with light texture pattern */
+      background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+      color: #333; 
       display: flex;
       justify-content: center;
       align-items: center;
@@ -46,11 +46,30 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
+      position: relative;
+    }
+
+    /* optional subtle pattern overlay using pseudo-element */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.05),
+        rgba(255,255,255,0.05) 1px,
+        transparent 1px,
+        transparent 10px
+      );
+      pointer-events: none;
     }
 
     .content {
       max-width: 900px;
       font-size: 1.8em; 
+      position: relative; /* keep above the pattern */
+      z-index: 1;
     }
 
     h1 {
@@ -91,9 +110,6 @@
 </head>
 <body>
 
-  <!-- Hidden image for SEO -->
-  <img src="background.jpg" alt="Freight logistics cargo containers in Estonia" style="display:none;">
-
   <div class="content">
     <h1>Hanson Logistics Ltd.</h1>
     <p>Freight forwarding services</p>
@@ -102,7 +118,7 @@
     <p>Phone: <a href="tel:+37256666701">+372 56666701</a></p>
     <p>Email: <a href="mailto:info@hansonlogistics.ee">info@hansonlogistics.ee</a></p>
 
-    <!-- Services list -->
+    <!-- Simple SEO-friendly services list -->
     <ul>
       <li>Air freight</li>
       <li>Road transport</li>
