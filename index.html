@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Hanson Logistics – Freight Forwarding Estonia</title>
-  <meta name="description" content="Hanson Logistics Ltd – Freight forwarding services in Estonia: air freight, sea freight, road transport, customs documentation, logistics planning. Contact: +372 56666701">
-  
+
+  <meta name="description" content="Hanson Logistics Ltd – Freight forwarding services in Estonia: air freight, sea freight, road transport, customs documentation, logistics planning.">
+  <meta name="robots" content="index, follow">
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
@@ -16,7 +19,7 @@
     "@context": "https://schema.org",
     "@type": "FreightCompany",
     "name": "Hanson Logistics Ltd.",
-    "url": "https://www.hansonlogistics.ee/",
+    "url": "https://0neof.github.io/hansonlogistics/",
     "telephone": "+37256666701",
     "email": "info@hansonlogistics.ee",
     "address": {
@@ -24,68 +27,109 @@
       "addressLocality": "Tallinn",
       "addressCountry": "EE"
     },
-    "description": "Freight forwarding services in Estonia: air freight, sea freight, road transport, customs documentation, logistics planning."
+    "description": "Freight forwarding services in Estonia including air freight, sea freight, road transport, customs documentation and logistics planning."
   }
   </script>
 
   <style>
     body {
-  margin: 0;
-  font-family: 'Quattrocento', serif;
+      margin: 0;
+      font-family: 'Quattrocento', serif;
 
-  /* Background */
-  background: linear-gradient(to bottom, #f5f6f7, #e8eaec);
-  color: #555;
+      background: linear-gradient(to bottom, #f7f8f9, #eceff1);
+      color: #555;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
-  line-height: 1.6em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      line-height: 1.6em;
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
 
-  position: relative;
-  box-shadow: inset 0 0 120px rgba(0,0,0,0.06);
-}
+      position: relative;
+      box-shadow: inset 0 0 120px rgba(0,0,0,0.05);
+    }
 
-body::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgba(255,255,255,0.03),
-    rgba(255,255,255,0.03) 1px,
-    transparent 1px,
-    transparent 14px
-  );
-  pointer-events: none;
-}
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.025),
+        rgba(255,255,255,0.025) 1px,
+        transparent 1px,
+        transparent 16px
+      );
+      pointer-events: none;
+    }
 
-.content {
-  max-width: 700px;
-  font-size: 1.4em;
-  position: relative;
-  z-index: 1;
-}
+    .content {
+      max-width: 700px;
+      font-size: 1.4em;
+      position: relative;
+      z-index: 1;
+    }
 
-h1 {
-  font-family: 'Crimson Text', serif;
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-  color: #2f2f2f;
-}
+    h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      color: #2f2f2f;
+    }
+
+    .description {
+      margin-bottom: 0.8em;
+    }
+
+    ul {
+      list-style: none;       /* NO DOTS */
+      padding: 0;
+      margin: 0.5em 0 1.2em 0;
+    }
+
+    ul li {
+      margin: 0.3em 0;
+    }
+
+    .contact {
+      margin-top: 2em;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        font-size: 1.2em;
+        line-height: 1.45em;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <div class="content">
     <h1>Hanson Logistics Ltd.</h1>
-    <p class="description">Freight forwarding services in Estonia</p>
+
+    <div class="description">
+      Freight forwarding services in Estonia
+    </div>
 
     <ul>
       <li>Air freight</li>
@@ -96,11 +140,13 @@ h1 {
     </ul>
 
     <div class="contact">
-      <p>Tallinn / Estonia | Reg. no 12072393 | VAT EE101677235</p>
-      <p>Phone: <a href="tel:+37256666701">+372 56666701</a> | Email: <a href="mailto:info@hansonlogistics.ee">info@hansonlogistics.ee</a></p>
+      <div>Tallinn / Estonia · Reg. no 12072393 · VAT EE101677235</div>
+      <div>
+        Phone: <a href="tel:+37256666701">+372 56666701</a> ·
+        Email: <a href="mailto:info@hansonlogistics.ee">info@hansonlogistics.ee</a>
+      </div>
     </div>
   </div>
 
 </body>
 </html>
-
