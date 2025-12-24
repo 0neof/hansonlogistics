@@ -1,91 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hanson Logistics – Freight Forwarding Estonia</title>
-  <meta name="description" content="Hanson Logistics Ltd – Freight forwarding services in Tallinn, Estonia. Contact: +372 56666701, info@hansonlogistics.ee">
-  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-
-  <!-- Structured data for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Hanson Logistics Ltd",
-    "url": "https://hansonlogistics.ee",
-    "logo": "https://0neof.github.io/hansonlogistics/favicon.ico",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+37256666701",
-      "contactType": "customer service",
-      "email": "info@hansonlogistics.ee"
-    },
-    "sameAs": []
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hanson Logistics – Freight Forwarding Estonia</title>
+<meta name="description" content="Hanson Logistics Ltd – Freight forwarding services in Tallinn, Estonia. Contact us: +372 56666701, info@hansonlogistics.ee">
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Quattrocento', serif;
+    color: #555;
   }
-  </script>
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Quattrocento', serif;
-      color: #555; /* softer dark grey */
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+  /* Responsive background image */
+  .background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills screen while keeping proportions */
+    z-index: -1;
+  }
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      line-height: 1.8em;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover; /* makes image resize automatically */
-    }
+  .content {
+    max-width: 900px;
+    padding: 5vw;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 2vw; /* responsive font size */
+  }
 
+  h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 4vw;
+    margin-bottom: 0.6em;
+    color: #333;
+  }
+
+  p {
+    margin: 0.6em 0;
+  }
+
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+
+  @media (max-width: 1024px) {
     .content {
-      max-width: 900px;
-      font-size: 1.8em; /* slightly smaller than previous too-big version */
+      font-size: 2.5vw;
+      padding: 6vw;
     }
+    h1 { font-size: 5vw; }
+  }
 
-    h1 {
-      font-family: 'Crimson Text', serif;
-      font-size: 2.5em; /* company name same as before */
-      margin-bottom: 0.6em;
-      color: #333;
+  @media (max-width: 600px) {
+    .content {
+      font-size: 4vw;
+      padding: 5vw;
     }
-
-    p {
-      margin: 0.6em 0;
-      font-size: 1em;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      .content {
-        font-size: 1.4em;
-      }
-      h1 {
-        font-size: 2em;
-      }
-      line-height: 1.6em;
-    }
-  </style>
+    h1 { font-size: 8vw; }
+  }
+</style>
 </head>
 <body>
+  <img src="background.jpg" alt="Freight forwarding in Estonia" class="background-img">
   <div class="content">
     <h1>Hanson Logistics Ltd.</h1>
     <p>Freight forwarding services in Estonia</p>
