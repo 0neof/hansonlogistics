@@ -3,150 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Hanson Logistics – Freight Forwarding Estonia</title>
-
-  <meta name="description" content="Hanson Logistics Ltd – Freight forwarding services in Estonia: air freight, sea freight, road transport, customs documentation, logistics planning.">
-  <meta name="robots" content="index, follow">
-
-  <!-- Fonts -->
+  <meta name="description" content="Hanson Logistics Ltd – Freight forwarding services in Tallinn, Estonia. Contact: +372 56666701, info@hansonlogistics.ee">
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-
-  <!-- Structured Data -->
+  
+  <!-- Structured data for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FreightCompany",
-    "name": "Hanson Logistics Ltd.",
-    "url": "https://0neof.github.io/hansonlogistics/",
-    "telephone": "+37256666701",
-    "email": "info@hansonlogistics.ee",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Tallinn",
-      "addressCountry": "EE"
+    "@type": "Organization",
+    "name": "Hanson Logistics Ltd",
+    "url": "https://hansonlogistics.ee",
+    "logo": "https://0neof.github.io/hansonlogistics/favicon.ico",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+37256666701",
+      "contactType": "customer service",
+      "email": "info@hansonlogistics.ee"
     },
-    "description": "Freight forwarding services in Estonia including air freight, sea freight, road transport, customs documentation and logistics planning."
+    "sameAs": []
   }
   </script>
-
+  
   <style>
     body {
       margin: 0;
       font-family: 'Quattrocento', serif;
-
-      background: linear-gradient(to bottom, #f7f8f9, #eceff1);
-      color: #555;
-
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #555; /* dark grey for visibility, softer than black */
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       text-align: center;
-      line-height: 1.6em;
-
+      line-height: 2em;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
-
-      position: relative;
-      box-shadow: inset 0 0 120px rgba(0,0,0,0.05);
     }
-
-    body::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: repeating-linear-gradient(
-        45deg,
-        rgba(255,255,255,0.025),
-        rgba(255,255,255,0.025) 1px,
-        transparent 1px,
-        transparent 16px
-      );
-      pointer-events: none;
-    }
-
     .content {
-      max-width: 700px;
-      font-size: 1.4em;
-      position: relative;
-      z-index: 1;
+      max-width: 900px;
+      font-size: 2em;
     }
-
     h1 {
       font-family: 'Crimson Text', serif;
       font-size: 2.5em;
-      margin-bottom: 0.5em;
-      color: #2f2f2f;
+      margin-bottom: 0.6em;
+      color: #333; /* slightly darker for company name */
     }
-
-    .description {
-      margin-bottom: 0.8em;
+    p {
+      margin: 0.6em 0;
+      font-size: 1em;
     }
-
-    ul {
-      list-style: none;       /* NO DOTS */
-      padding: 0;
-      margin: 0.5em 0 1.2em 0;
-    }
-
-    ul li {
-      margin: 0.3em 0;
-    }
-
-    .contact {
-      margin-top: 2em;
-    }
-
     a {
       color: #0066cc;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
     @media (max-width: 600px) {
       .content {
-        font-size: 1.2em;
-        line-height: 1.45em;
+        font-size: 1.5em;
       }
-
       h1 {
         font-size: 2em;
       }
+      line-height: 1.8em;
     }
   </style>
 </head>
-
 <body>
-
   <div class="content">
     <h1>Hanson Logistics Ltd.</h1>
-
-    <div class="description">
-      Freight forwarding services in Estonia
-    </div>
-
-    <ul>
-      <li>Air freight</li>
-      <li>Sea freight</li>
-      <li>Road transport</li>
-      <li>Customs documentation</li>
-      <li>Logistics planning</li>
-    </ul>
-
-    <div class="contact">
-      <div>Tallinn / Estonia · Reg. no 12072393 · VAT EE101677235</div>
-      <div>
-        Phone: <a href="tel:+37256666701">+372 56666701</a> ·
-        Email: <a href="mailto:info@hansonlogistics.ee">info@hansonlogistics.ee</a>
-      </div>
-    </div>
+    <p>Freight forwarding services in Estonia</p>
+    <p>Air freight</p>
+    <p>Road transport</p>
+    <p>Sea freight</p>
+    <p>Customs documentation</p>
+    <p>Logistics planning</p>
+    <br>
+    <p>Tallinn / Estonia</p>
+    <p>Reg. no 12072393 | VAT no EE101677235</p>
+    <p>Phone: <a href="tel:+37256666701">+372 56666701</a></p>
+    <p>Email: <a href="mailto:info@hansonlogistics.ee">info@hansonlogistics.ee</a></p>
   </div>
-
 </body>
 </html>
