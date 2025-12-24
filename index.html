@@ -7,7 +7,7 @@
   <meta name="description" content="Hanson Logistics Ltd – Freight forwarding services in Tallinn, Estonia. Contact: +372 56666701, info@hansonlogistics.ee">
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-  
+
   <!-- Structured data for SEO -->
   <script type="application/ld+json">
   {
@@ -25,53 +25,63 @@
     "sameAs": []
   }
   </script>
-  
+
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: 'Quattrocento', serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #555; /* dark grey for visibility, softer than black */
+      color: #555; /* softer dark grey */
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
       text-align: center;
-      line-height: 2em;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
+      line-height: 1.8em;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover; /* makes image resize automatically */
     }
+
     .content {
       max-width: 900px;
-      font-size: 2em;
+      font-size: 1.8em; /* slightly smaller than previous too-big version */
     }
+
     h1 {
       font-family: 'Crimson Text', serif;
-      font-size: 2.5em;
+      font-size: 2.5em; /* company name same as before */
       margin-bottom: 0.6em;
-      color: #333; /* slightly darker for company name */
+      color: #333;
     }
+
     p {
       margin: 0.6em 0;
       font-size: 1em;
     }
+
     a {
       color: #0066cc;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     @media (max-width: 600px) {
       .content {
-        font-size: 1.5em;
+        font-size: 1.4em;
       }
       h1 {
         font-size: 2em;
       }
-      line-height: 1.8em;
+      line-height: 1.6em;
     }
   </style>
 </head>
