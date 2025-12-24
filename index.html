@@ -39,17 +39,14 @@
     }
 
     body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  line-height: 1.8em;
-  background: url('background.jpg') no-repeat center center fixed;
-  background-size: contain;   /* instead of cover */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 1.8em;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover; /* makes image resize automatically */
+    }
 
     .content {
       max-width: 900px;
@@ -105,4 +102,3 @@
   </div>
 </body>
 </html>
-
