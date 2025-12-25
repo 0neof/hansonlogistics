@@ -115,5 +115,30 @@ a:hover {
     <p>Email: <a href="mailto:info@hansonlogistics.ee">info@hansonlogistics.ee</a></p>
   </div>
 </div>
+  <script>
+(function () {
+  const now = new Date();
+  const month = now.getMonth(); // December = 11
+
+  if (month !== 11) return; // only December
+
+  const snowflakesCount = 25;
+
+  for (let i = 0; i < snowflakesCount; i++) {
+    const snowflake = document.createElement('div');
+    snowflake.className = 'snowflake';
+    snowflake.textContent = '❄';
+
+    snowflake.style.left = Math.random() * 100 + 'vw';
+    snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
+    snowflake.style.animationDuration = (Math.random() * 10 + 10) + 's';
+    snowflake.style.animationDelay = Math.random() * 10 + 's';
+    snowflake.style.opacity = Math.random();
+
+    document.body.appendChild(snowflake);
+  }
+})();
+</script>
 </body>
 </html>
+
