@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Hanson Logistics – Freight Forwarding Estonia</title>
-
 <meta name="description" content="Freight forwarding services in Estonia. Air, road and sea freight, customs documentation and logistics planning. Hanson Logistics Ltd, Tallinn.">
 
+<!-- Open Graph / Social Media -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hanson Logistics – Freight Forwarding Estonia">
+<meta property="og:description" content="Freight forwarding services in Estonia. Air, road and sea freight, customs documentation and logistics planning.">
+<meta property="og:locale" content="en_EE">
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Fonts with display=swap to prevent FOIT -->
 <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 
@@ -15,7 +25,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden; /* hard no-scroll */
+  overflow: hidden;
   font-family: 'Quattrocento', serif;
   color: #4a4a4a;
 }
@@ -57,16 +67,28 @@ html, body {
   line-height: 1.55;
 }
 
-/* Typography (another +25%) */
+/* Typography */
 h1 {
   font-family: 'Crimson Text', serif;
-  font-size: 7.8vh; /* was 6.25vh */
+  font-size: 7.8vh;
   margin: 0 0 1.2vh;
   color: #2f2f2f;
 }
 
 p {
-  font-size: 3.45vh; /* was 2.75vh */
+  font-size: 3.45vh;
+  margin: 0.5vh 0;
+}
+
+/* Services list for better semantics */
+.services {
+  list-style: none;
+  padding: 0;
+  margin: 0.5vh 0;
+}
+
+.services li {
+  font-size: 3.45vh;
   margin: 0.5vh 0;
 }
 
@@ -80,40 +102,66 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:focus {
   text-decoration: underline;
+  outline: 2px solid #355f8a;
+  outline-offset: 2px;
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #355f8a;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 /* Short screens safety */
 @media (max-height: 700px) {
   h1 { font-size: 7vh; }
-  p  { font-size: 3vh; }
+  p, .services li { font-size: 3vh; }
 }
 </style>
 </head>
-
 <body>
-<div class="background"></div>
-
-<div class="page">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="background" aria-hidden="true"></div>
+<main id="main-content" class="page">
   <div class="content">
-    <h1>Hanson Logistics Ltd.</h1>
-
-    <p>Freight forwarding services in Estonia</p>
-
-    <p>Air freight</p>
-    <p>Road transport</p>
-    <p>Sea freight</p>
-    <p>Customs documentation</p>
-    <p>Logistics planning</p>
-
+    <header>
+      <h1>Hanson Logistics Ltd.</h1>
+      <p>Freight forwarding services in Estonia</p>
+    </header>
+    
+    <section aria-label="Services">
+      <ul class="services">
+        <li>Air freight</li>
+        <li>Road transport</li>
+        <li>Sea freight</li>
+        <li>Customs documentation</li>
+        <li>Logistics planning</li>
+      </ul>
+    </section>
+    
     <div class="spacer"></div>
-
-    <p>Tallinn / Estonia</p>
-    <p>Reg. no 12072393 | VAT no EE101677235</p>
-    <p>Phone: <a href="tel:+37256666701">+372 56666701</a></p>
-    <p>Email: <a href="mailto:info@hansonlogistics.ee">info@hansonlogistics.ee</a></p>
+    
+    <footer>
+      <address style="font-style: normal;">
+        <p>Tallinn / Estonia</p>
+        <p>Reg. no 12072393 | VAT no EE101677235</p>
+        <p>Phone: <a href="tel:+37256666701" aria-label="Call Hanson Logistics at +372 56666701">+372 56666701</a></p>
+        <p>Email: <a href="mailto:info@hansonlogistics.ee" aria-label="Email Hanson Logistics at info@hansonlogistics.ee">info@hansonlogistics.ee</a></p>
+      </address>
+    </footer>
   </div>
-</div>
+</main>
 </body>
 </html>
