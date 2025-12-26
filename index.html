@@ -25,7 +25,6 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
   font-family: 'Quattrocento', serif;
   color: #4a4a4a;
 }
@@ -51,11 +50,14 @@ html, body {
 
 /* Page wrapper */
 .page {
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 2vh 0;
+  box-sizing: border-box;
 }
 
 /* Content */
@@ -124,10 +126,25 @@ a:hover, a:focus {
   top: 0;
 }
 
-/* Short screens safety */
+/* Mobile and short screens adjustments */
 @media (max-height: 700px) {
-  h1 { font-size: 7vh; }
-  p, .services li { font-size: 3vh; }
+  h1 { font-size: 6vh; }
+  p, .services li { font-size: 2.6vh; }
+  .spacer { height: 1vh; }
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 6.5vh; }
+  p, .services li { font-size: 2.8vh; }
+  .content { padding: 2vh 5vw; }
+}
+
+/* Extra small screens */
+@media (max-height: 600px) {
+  h1 { font-size: 5vh; }
+  p, .services li { font-size: 2.2vh; }
+  .spacer { height: 0.8vh; }
+  .content { padding: 1.5vh 5vw; }
 }
 </style>
 </head>
